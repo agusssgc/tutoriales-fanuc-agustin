@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto de tutoriales Fanuc 2024/2025 - Agustín Carnicer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.fanuc.eu/~/media/fanuc-europe/images/robots/painting/p700/p700-1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #000;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(255, 255, 255, 0.85);
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border-bottom: 2px solid #ccc;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            color: #cc0000;
+            text-align: center;
+            margin: 30px 20px 10px;
+            font-size: 28px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 30px 20px;
+            gap: 30px;
+        }
+
+        .column {
+            flex: 1 1 300px;
+            max-width: 500px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        .button-link {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #000;
+            padding: 6px 10px;
+            margin: 5px 0;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            font-size: 13px;
+            width: 70%;
+            max-width: 300px;
+        }
+
+        .button-link:hover {
+            background-color: #e6b800;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .linkedin-container {
+            text-align: center;
+            margin: 40px 0 10px;
+        }
+
+        .linkedin-button,
+        .youtube-button {
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            color: white;
+        }
+
+        .linkedin-button {
+            background-color: #0077b5;
+        }
+
+        .linkedin-button:hover {
+            background-color: #005f8d;
+        }
+
+        .youtube-button {
+            background-color: #cc0000;
+            margin-top: 12px;
+        }
+
+        .youtube-button:hover {
+            background-color: #990000;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="encabezado.jpg" alt="Robot Fanuc">
+</header>
+
+<h1>Proyecto de tutoriales Fanuc 2024/2025 - Agustín Carnicer</h1>
+
+<div class="container">
+    <div class="column">
+        <h2>Tutoriales desde Roboguide</h2>
+        <div class="button-container">
+            <a class="button-link" href="https://youtu.be/2XzGUE7eagg" target="_blank">1 - Iniciación</a>
+            <a class="button-link" href="https://youtu.be/vDG_uPoJ5X8" target="_blank">2 - UserFrame, UTool y traslado</a>
+            <a class="button-link" href="https://youtu.be/7FivaTfFyLo" target="_blank">3 - Trayectoria lineal, curva y traslado</a>
+            <a class="button-link" href="https://youtu.be/rcQK3muMHHA?si=NTQ9V4dbgPZSj2zn" target="_blank">4 - Función Space</a>
+            <a class="button-link" href="https://youtu.be/TT5zwiE6PX8?si=PmTa8uNiDb89j3j8" target="_blank">5 - Posición de referencia y Backup</a>
+            <a class="button-link" href="https://youtu.be/n-hc5OAE-gM" target="_blank">6 - Cilindro (machine) y Pick and Place</a>
+            <a class="button-link" href="https://youtu.be/zbt-sm10SeA" target="_blank">7 - Offset, PR, R</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <h2>Ejercicio CVSKILLS 2023</h2>
+        <div class="button-container">
+            <a class="button-link" href="https://youtu.be/nMcxLososuQ" target="_blank">1 - Configuración inicial</a>
+            <a class="button-link" href="https://youtu.be/Hwd3D9GCaDc" target="_blank">2 - Entradas y salidas digitales, macros, memoria FLAG y MAIN</a>
+            <a class="button-link" href="https://youtu.be/RF7Wh1NhuAs" target="_blank">3 - I/O panel en roboguide, simulación y creación de jump labels.</a>
+            <a class="button-link" href="https://youtu.be/2_MHQIFh8R8" target="_blank">4 - Configuración de timers de ciclo, axis limits y acceso a menú payload.</a>
+            <a class="button-link" href="https://youtu.be/WlTGXa9CB90" target="_blank">5 - Traslado entre estaciones</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <h2>Ejercicio CVSKILLS 2025</h2>
+        <div class="button-container">
+            <a class="button-link" href="https://youtu.be/jUB8gBm5Ipk" target="_blank">1 - UserFrames, UTools, payload y cilindro</a>
+            <a class="button-link" href="https://youtu.be/8255JQacUwE" target="_blank">2 - Macros, memoria flag, colocación de parts y programación</a>
+            <a class="button-link" href="https://youtu.be/14pvdkbMK30" target="_blank">3 - Programación general</a>
+            <a class="button-link" href="https://youtu.be/lr7yWYCVqzw" target="_blank">4 - Fin de programación y configuración de simulación</a>
+            <a class="button-link" href="https://youtu.be/phHqYmbv1Wg" target="_blank">5 - Simulación día 2, revisión y día 3</a>
+        </div>
+    </div>
+</div>
+
+<div class="linkedin-container">
+    <a class="linkedin-button" href="https://www.linkedin.com/in/agust%C3%ADn-carnicer-a5108b346/" target="_blank">
+        Visita mi perfil en LinkedIn
+    </a>
+    <br>
+    <a class="youtube-button" href="https://youtube.com/@aguscarnicer?si=oVSAUh8yk9uJzxMz" target="_blank">
+        Visita mi canal de YouTube
+    </a>
+</div>
+
+<footer>
+    © 2025 Agustín Carnicer – Todos los derechos reservados
+</footer>
+
+</body>
+</html>
